@@ -331,11 +331,21 @@ main {
   gap: 15px;
 }
 
-.avatar-box {
-  background: var(--bg-gradient-onyx);
-  border-radius: 20px;
-}
 
+.my-avatar {
+  height:150px;
+  width:150px;
+  border-radius:50%;
+  object-fit: cover; /* prevents distortion */
+}
+@media (max-width: 786px) {
+  .my-avatar {
+  height:60px;
+  width:60px;
+  border-radius:50%;
+  object-fit: cover; /* prevents distortion */
+}
+}
 .info-content .name {
   color: var(--white-2);
   font-size: var(--fs-3);
@@ -1159,6 +1169,7 @@ main {
   padding: 13px 20px;
   border: 1px solid var(--jet);
   border-radius: 14px;
+  background-color: black;
   outline: none;
 }
 
